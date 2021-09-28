@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Title/>
+    <Hero imgFile="https://i.pinimg.com/564x/e8/4f/a0/e84fa0db16dc951f8d70ef5a0fe74518.jpg"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Title from './components/Title.vue';
+import Hero from './components/Hero.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Title,
+    Hero
   }
 }
 </script>
@@ -24,5 +26,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+// reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 </style>
